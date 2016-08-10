@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>双项目</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+	.box{display:flex;}
+
+	/* 将space-between 换成 space-around 效果更佳，比较贴近实战 */
+	/* 注意开启column属性时，justify-content 和 align-items 的身份会互换*/
+	/* align-self 允许在大局样式的基础上，对单一元素进行y轴更替,并且目前为止也仅仅知道可以换y轴而已 */
+
+	/*.box{justify-content:space-between;align-items: flex-start;}*/
+	/*.box{justify-content:space-between;align-items: center}*/
+	/*.box{justify-content:space-between;align-items: flex-end;}*/
+
+	/*.box{justify-content:space-between;flex-direction: column;align-items: flex-start;}*/
+	/*.box{justify-content:space-between;flex-direction: column;align-items: center}*/
+	/*.box{justify-content:space-between;flex-direction: column;align-items: flex-end;}*/
+
+	/*.item:nth-child(2){align-self: center;}*/
+	/*.box{justify-content: space-between;}.item:nth-child(2){align-self: flex-end;}*/
+
+	/*.box{justify-content:flex-start;flex-direction: column;align-items: flex-start;}*/
+	/*.box{justify-content:flex-start;flex-direction: column;align-items: center;}*/
+	/*.box{justify-content:flex-start;flex-direction: column;align-items: flex-end;}*/
+
+	/*.box{justify-content: space-between;} .item:nth-child(1){align-self: flex-end;}*/
+
+	.box{align-items:flex-start;flex-direction: column;justify-content: flex-end; }
+</style>
+<body>
+    <div class="box">
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+</body>
+
+</html>

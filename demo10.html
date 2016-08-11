@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>五项目</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+	.box{display: flex;}
+	.box2{height:100%;}
+	.box2:nth-child(1){flex:0 0 70%;}
+	.box2:nth-child(2){flex:auto;display:flex;flex-direction: column;}
+	.box3{flex:1;}
+</style>
+<body>
+    <div class="box">
+        <div class="box2" style="background:#ccc"></div>
+        <div class="box2">
+        	 <div class="box3" style="background:yellow"></div>
+        	 <div class="box3" style="background:green"></div>
+        	 <div class="box3" style="background:red"></div>
+        	 <div class="box3" style="background:orange"></div>
+        </div>
+    </div>
+</body>
+
+</html>
